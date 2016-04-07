@@ -1,0 +1,91 @@
+.body{
+	width: 663px;
+	height: 600px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#banner{
+	width: 300px;
+	height: 160px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #005CB9;
+	background: #f1ecfb;
+	margin: auto;
+	font-family: "Arial";
+	box-shadow: 5px 5px 20px;
+}
+
+#calcbar{
+	width: 320px;
+	height: 50px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #ce3527;
+	background: #f1ecfb;
+	margin: auto;
+	box-shadow: 5px 5px 20px;
+}
+
+#calcdisplay{
+	width: 100%;
+	height: 100%;
+	font-family: "Arial";
+	font-size: 18;
+	resize: none;
+	overflow-y: auto;
+}
+
+#button{
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	border-radius: 10px;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*The main calculator body*/
+#left{
+	width: 330px;
+	height: 570px;
+	margin: auto;
+	left: 50px;
+	float: left;
+}
+
+#numbody{
+	width: 300px;
+	height: 290px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #f1f500;
+	background: #f1ecfb;
+	box-shadow: 5px 5px 20px;
+	margin: auto;
+	float: left;
+}
+
+
+#right{
+	width: 330px;
+	height: 320px;
+	left: 50px;
+	float: right;
+	margin-top: 250px;
+}
+
+#scibody{
+	width: 300px;
+	height: 290px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #f1f500;
+	background: #f1ecfb;
+	box-shadow: 5px 5px 20px;
+}

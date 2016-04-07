@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Calculator Project</title>
+		
+		<script language="javascript" type="text/javascript" src="sci.js"></script>
+		
+	</head>
+	<body onload="showHideScientificButtons();">
+		<!--Body/Calculator-->
+		<div class="body">
+			<div id="left">
+				<div id="banner">
+					<center><h2>Basic Calculator</h2></center><br/>By Garman Liu<br/>
+					<input id="button" type="button" value="SCI" onclick="showHideScientificButtons()">
+				</div>
+				
+				<!--calc bar-->
+				<div id="calcbar">
+					<textarea id="calcdisplay" rows="4" cols="50" style="background-color: white" disabled></textarea>
+				</div>
+			
+				<div id="numbody">
+					<form id="calcbuttons">
+						<input id="button" type="button" value="1" onclick="updateValue(1)">
+						<input id="button" type="button" value="2" onclick="updateValue(2)">
+						<input id="button" type="button" value="3" onclick="updateValue(3)">
+						<input id="button" type="button" value="/" onclick="updateOperator('/')"><br/>
+						<input id="button" type="button" value="4" onclick="updateValue(4)">
+						<input id="button" type="button" value="5" onclick="updateValue(5)">
+						<input id="button" type="button" value="6" onclick="updateValue(6)">
+						<input id="button" type="button" value="*" onclick="updateOperator('*')"><br/>
+						<input id="button" type="button" value="7" onclick="updateValue(7)">
+						<input id="button" type="button" value="8" onclick="updateValue(8)">
+						<input id="button" type="button" value="9" onclick="updateValue(9)">
+						<input id="button" type="button" value="-" onclick="updateOperator('-')"><br/>
+						<input id="button" type="button" value="0" onclick="updateValue(0)">
+						<input id="button" type="button" value="=" onclick="calculate()">
+						<input id="button" type="button" value="C" onclick="clearData()">
+						<input id="button" type="button" value="+" onclick="updateOperator('+')">
+					</form>
+				</div>
+			</div>
+			
+			<div id="right">
+				<div id="scibody">
+					<form id="scibuttons">
+						<input id="button" type="button" value="&radic;" onclick="squareRoot()">
+						<input id="button" type="button" value="1/x" onclick="reciprocal()">
+						<input id="button" type="button" value="n!" onclick="factorial()">
+						<input id="button" type="button" value="x^2" onclick="powerOfTwo()"><br/>
+						<input id="button" type="button" value="x^y" onclick="updateOperator('^')">
+						<input id="button" type="button" value="x^3" onclick="powerOfThree()">
+						<input id="button" type="button" value="sin" onclick="sin()">
+						<input id="button" type="button" value="cos" onclick="cos()"><br/>
+						<input id="button" type="button" value="tan" onclick="tan()">
+						<input id="button" type="button" value="sinh" onclick="sinh()">
+						<input id="button" type="button" value="cosh" onclick="cosh()">
+						<input id="button" type="button" value="tanh" onclick="tanh()"><br/>
+						<input id="button" type="button" value="log" onclick="log()">
+						<input id="button" type="button" value="10^x" onclick="tenPowerOfX()">
+						<input id="button" type="button" value="Exp" onclick="exponent()">
+						<input id="button" type="button" value="&pi;" onclick="pi()">
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</body>
+</html>
